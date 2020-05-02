@@ -1,0 +1,104 @@
+@font-face
+{
+    font-family: 'AUGUSTUS';
+    src: url('fonts/AUGUSTUS.ttf')
+}
+
+*
+{
+    font-family: 'AUGUSTUS';
+}
+
+/*BACKGROUND FONCE ET ECRITURES DOREES SUR TOUT LE SITE*/
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: darkgoldenrod;
+}
+/*BACKGROUND ANIME*/
+#particles-js
+{
+    /*height: 100vh;
+    width: 100vh;
+    padding: 0;*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+/*******************************DEBUT NAVBAR********************************/
+/*PADDING POUR RENDRE LA NAVBAR FINE*/
+.navbar
+{
+    background-color: #1a1a1a;
+    border-bottom: solid 0.01rem #4d3d00;
+    font-size: 1.1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#nom
+{
+    color: darkgoldenrod;
+}
+
+/*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
+.navbar-nav a.nav-link.active
+{
+    color: darkgoldenrod!important;
+}
+/********************************FIN NAVBAR**********************************/
+/**********************************HEADER************************************/
+.container-fluid
+{
+    height: 100vh;
+    background-color: #0d0d0d;
+    /*background-image: url(img/smoke2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+/*CENTRER LE TEXTE ET LE FAIRE PASSER AU-DESSUS DU BACKGROUND PARTICLES*/
+h1, h3, blockquote, #logo
+{
+    background-color: transparent;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3
+{
+    margin-top: 13rem;
+    width: auto;
+    font-size: 3rem;
+}
+
+#logo
+{
+    margin-top: 6.5rem;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(img/spartan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1
+{
+    margin-top: 28rem;
+    width: auto;
+    font-size: 4rem;
+}
+
+blockquote
+{
+    margin-top: 50rem;
+    width: auto;
+    font-size: 2rem;
+}
+
