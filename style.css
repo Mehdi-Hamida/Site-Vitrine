@@ -1,12 +1,13 @@
-@font-face
-{
-    font-family: 'AUGUSTUS';
-    src: url('fonts/AUGUSTUS.ttf')
-}
-
 *
 {
-    font-family: 'AUGUSTUS';
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+@font-face 
+{
+    font-family: 'Qavo';
+    src: url('fonts/Qavo.otf') format('otf');
+    src: url('fonts/Qavo.ttf') format('truetype');
 }
 
 /*BACKGROUND FONCE ET ECRITURES DOREES SUR TOUT LE SITE*/
@@ -102,3 +103,8 @@ blockquote
     font-size: 2rem;
 }
 
+h1, h2
+{
+    font-family: 'Qavo';
+    text-align: center;
+}
