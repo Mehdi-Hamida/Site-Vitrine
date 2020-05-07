@@ -1,12 +1,12 @@
 /*********************************GENERAL*********************************/
-html
+html 
 {
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-*
+* 
 {
     font-family: 'Alegreya sans', sans-serif;
 }
@@ -18,184 +18,610 @@ html
 }
 
 /*BACKGROUND FONCE ET ECRITURES DOREES SUR TOUT LE SITE*/
-body
+body 
 {
     background-color: #0d0d0d;
-    color: darkgoldenrod;
 }
 
 /*BACKGROUND ANIME*/
-#particles-js
+#particles-js 
 {
     /*height: 100vh;
-    width: 100vh;
+    width: 100vw;
     padding: 0;*/
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    /*position: absolute;*/
+    width: 100vw;
+    height: 100vh;
     padding: 0;
 }
 
 /*CHAQUE SECTION FAIT LA TAILLE DE L'ECRAN EN HAUTEUR, LE PADDING TOP SERT A COMPENSER LA HAUTEUR DE LA NAVBAR POUR NE PAS CACHER DES ELEMENTS DERRIERE CETTE DERNIERE*/
-section, footer
+#a_propos,
+#competences,
+#projets,
+footer 
 {
     height: 100vh;
-    width: 100%;
-    padding-top: 11vh;
+    width: 100vw;
+    padding-top: 12vh;
 }
-/*******************************DEBUT NAVBAR********************************/
 
-.navbar
+/*COULEURS DE TEXTES*/
+h4, blockquote, p
 {
-    background-color: #1a1a1a;
-    border-bottom: solid 0.01rem #4d3d00;
-    font-size: 1.5rem;
-    height: /*8vh*/;
+    color: #a6a6a6;
 }
 
-#nom
+#nom, h1, h2, h3, .explorer
 {
     color: darkgoldenrod;
-    font-size: 1.7rem;
 }
 
-.navbar-brand
+/*******************************DEBUT NAVBAR********************************/
+
+.navbar 
 {
-    margin-left: 0.5rem;
+    border-bottom: solid 0.01rem #4d3d00;
+    font-size: 1.5rem;
+    height:3vh;
+}
+
+.navbar-toggler, .navbar-toggler-icon
+{
+    border-color: darkgoldenrod!important;
+}
+
+#nom 
+{
+    font-size: 1.7rem;
+    margin-left: -0.9rem;
 }
 
 /*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
-.navbar-nav a.nav-link.active
+.navbar-nav a.nav-link.active 
 {
-    color: darkgoldenrod!important;
+    color: darkgoldenrod !important;
 }
+
 /********************************FIN NAVBAR**********************************/
-/**********************************HEADER************************************/
-.container-fluid
-{
-    height: 100vh;
-    background-color: #0d0d0d;
-}
+
+/*********************************ACCUEIL************************************/
+
+
 /*CENTRER LE TEXTE ET LE FAIRE PASSER AU-DESSUS DU BACKGROUND PARTICLES*/
-h1, h3, blockquote, #logo, .suivant
+h1,
+h3,
+h4,
+blockquote,
+#logo,
+.suivant 
 {
     background-color: transparent;
-    z-index: 2;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    /*z-index: 2;*/
 }
 
-h3
+h4
 {
     margin-top: 12rem;
     width: auto;
     min-width: 19rem;
     font-size: 8vw;
-    color: grey;
 }
 
-#logo
+#logo 
 {
     margin-top: 7.5rem;
     width: 5rem;
     height: 5rem;
-    background-image: url(img/spartan.png);
+    background-image: url(img/logo_initiales8-removebg-preview.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-h1
+h1 
 {
     margin-top: 50vh;
     width: 95%;
-    font-size: 320%/*12vw*/;
+    font-size: 320%
+        /*12vw*/
+    ;
 }
 
-blockquote
+.lyon 
 {
-    margin-top: 34rem;
-    width: 95%;
-    font-size: /*2em*/200%;
-    color: grey;
+    font-family: 'Argesta Headline';
     text-align: center;
+    font-size: 2.7rem;
+    margin-top: 48vh;
+    color: darkgoldenrod;
 }
 
-h1, h2
+h1,
+h2 
 {
     font-family: 'Argesta Headline';
     text-align: center;
 }
 
-.suivant
+blockquote 
 {
-    margin-top: 96vh;
-    position: absolute;
+    margin-top: 34rem;
+    font-size:
+        /*2em*/
+        200%;
+    text-align: center;
+    quotes: "“""”";
+    line-height: 1.5em;
+}
+
+/*AJOUT DE GUILLEMETS*/
+/*blockquote:before 
+{
+    content: open-quote;
+}
+
+blockquote:after 
+{
+    content: close-quote;
+}
+
+blockquote:before,
+blockquote:after 
+{
+    display: inline-block;
+    vertical-align: bottom;
+    font-family: sans-serif;
+    color: darkgoldenrod;
+    font-size: 4em;
+    top: .2em;
+    position: relative;
+}*/
+
+#suivant 
+{
+    /*margin-top: 96vh;*/
+    /*position: absolute;*/
     height: 5vh;
     width: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(img/triangle.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-/*///////////////////////////////MOBILES//////////////////////////////////*/
-@media (max-width: 768px) and (max-height: 1023px)
+
+.explorer 
 {
-    .navbar
+    /*position: absolute;*/
+    margin-top: -4rem;
+    margin-bottom: 0.19rem;
+    margin-left: auto;
+    text-align: center;
+    width: ;
+    font-size: 0.6rem;
+    font-weight: 600;
+    background-color: transparent;
+    bottom: 50vh;
+}
+
+/*///////////////////////////////MOBILES//////////////////////////////////*/
+@media (max-width: 768px) and (max-height: 1023px) {
+    .navbar 
     {
-        background-color: #1a1a1a;
+        background-color: #0d0d0d;
         border-bottom: solid 0.01rem #4d3d00;
         font-size: 1.5rem;
-        height: 4rem;
-    }
-    
-    #nom
-    {
-        font-size: 1.5rem;
+        height: 3rem;
     }
 
-    
-    #logo
+    nav img
     {
-        width: 3rem;
-        height: 3rem;
+        width: 2.7rem;
+        height: 2.7rem;
+        margin-top: -0.7rem;
+    }
+    
+    #nom 
+    {
+        font-size: 1.8rem;
+        margin-top: -0.6rem;
+    }
+
+    button
+    {
+        margin-top: -0.6rem;
+    }
+    
+    #logo 
+    {
+        width: 4rem;
+        height: 4rem;
         margin-top: 6.5rem;
     }
-    
-    h1
+
+    h1 
     {
-        font-size: 3rem;
-        margin-top: 45vh;
+        font-size: 2.3rem;
+        margin-top: 38vh;
     }
-    
-    h3
+
+    .lyon 
     {
-        font-size: 1.7rem;
-        margin-top: 9.5rem;
+        font-size: 2rem;
+        margin-top: 46.5vh;
     }
-    
-    blockquote
+
+    h4
     {
-        margin-top: 78vh;
-        font-size: 7vw;
+        font-size: /*1.7*/2rem;
+        margin-top: 10rem;
+    }
+
+    blockquote 
+    {
+        margin-top: 70vh;
+        font-size: 7.4vw;
         width: 70vw;
         text-align: center;
     }
-    
-}
-/*//////////////////////////////TABLETTES//////////////////////////////////*/
-@media (max-width: 1025px)
-{
-    
-}
-/******************************MEDIA QUERIES*******************************/
-@media screen and (max-width: 767px)
-{
-    #affiche
+
+    /*blockquote:before 
     {
-        display: none;
+        content: open-quote;
+        margin-left: -1.95rem;
+        
     }
-    
+
+    blockquote:after 
+    {
+        content: close-quote;
+        margin-right: -3rem;
+    }*/
+
+    /*AJOUT DE GUILLEMETS*/
+    .quote1,
+    .quote2 
+    {
+        position: absolute;
+        font-family: sans-serif;
+        color: darkgoldenrod;
+        font-size: 5rem;
+    }
+
+    .quote1 
+    {
+        margin-left: -7vw;
+        margin-top: -1vh;
+    }
+
+    .quote2 
+    {
+        margin-top: 1vh;
+        margin-left: 70vw;
+    }
+
+    #suivant 
+    {
+        /*margin-top: 90.5vh;*/
+        height: 6vh;
+        width: 6vh;
+    }
+
+}
+
+/*//////////////////////////////TABLETTES//////////////////////////////////*/
+@media (max-width: 1025px) {}
+
+
+/*
+button 
+{
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+}
+
+.barre 
+{
+    height: 0px;
+    border: 1.5px solid darkgoldenrod;
+    width: 22px;
+    display: block;
+    position: absolute;
+    margin-top: 1.41rem;
+    margin-left: -0.55rem;
+    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    background: transparent;
+}
+
+button:hover 
+{
+    transition-delay: 100ms;
+    transform: scale(1.1);
+}
+
+button:hover .barre 
+{
+    border: 2px solid darkgoldenrod;
+    height: 9px;
+    border-radius: 50%;
+    margin-left: -10.5px;
+    margin-top: 10px;
+    animation: atom 300ms linear 1;
+    width: 25px;
+    top: 0px;
+    background: transparent;
+}
+
+button:focus 
+{
+    outline: 0px;
+}
+
+.barre:nth-child(1) 
+{
+    top: 0px;
+}
+
+.barre:nth-child(2) 
+{
+    top: 8px;
+}
+
+.barre:nth-child(3) 
+{
+    top: 16px;
+}
+
+button:hover .barre:nth-child(1) 
+{
+    transform: rotate(-33deg);
+}
+
+button:hover .barre:nth-child(2) 
+{
+    transform: rotate(90deg);
+}
+
+button:hover .barre:nth-child(3) 
+{
+    transform: rotate(33deg);
+}
+
+button:active:hover .barre:nth-child(3):before,
+button:active .barre:nth-child(3):before,
+button:active .barre:nth-child(2) 
+{
+    opacity: 0;
+    transition: all 200ms;
+}
+
+button:active .barre 
+{
+    border: 1.5px solid transparent;
+    height: 0px;
+    border-radius: 0%;
+    margin-left: -1px;
+    margin-top: 6px;
+    animation: division 300ms linear 1;
+    width: 25px;
+    top: 0px;
+}
+
+button:active .barre:nth-child(2) 
+{
+    width: 0px;
+}
+
+button:active .barre:nth-child(3) 
+{
+    transform: rotate(45deg);
+}
+
+button:active .barre:nth-child(1) 
+{
+    transform: rotate(-45deg);
+}
+
+@keyframes atom 
+{
+    0% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes division 
+{
+    0% {
+        transform: rotate(180deg);
+    }
+}*/
+
+button {
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+  cursor: pointer;
+  background: transparent;
+  border: 0px;
+}
+/*PROPRIETES DES BARRES HORS ANIMATION*/
+.barre 
+{
+    height: 0px;
+    border: 1px solid #a6a6a6;
+    width: 22px;
+    display: block;
+    position: absolute;
+    margin-top: 1.41rem;
+    margin-left: -0.55rem;
+    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    background: transparent;
+}
+/*TAILLE DE L'ATOME*/
+button:hover {
+  transition-delay: 100ms;
+  transform: scale(1.2);
+}
+
+button:hover .barre:nth-child(3):before {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+/*MODIFIER LA VALEUR DE BORDER POUR CHANGER L'EPAISSEUR DES BARRES DE L'ATOME*/
+button:hover .barre 
+{
+    border: 1px solid darkgoldenrod;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: -10.5px;
+    margin-top: 10px;
+    animation: atom 300ms linear 1;
+    width: 25px;
+    top: 0px;
+    background: transparent;
+}
+
+button:focus {
+  outline: 0px;
+}
+
+/*ESPACEMENT DES BARRES HORS ANIMATION*/
+.barre:nth-child(1) {
+  top: 0px;
+}
+
+.barre:nth-child(2) {
+  top: 8px;
+}
+
+.barre:nth-child(3) {
+  top: 16px;
+}
+/*PROPRIETES DE LA BALLE*/
+.barre:nth-child(3):before {
+  opacity: 0;
+  animation: ball 1.7s linear infinite;
+  content: '';
+  border: 2px solid darkgoldenrod;
+  display: block;
+  position: relative;
+  top: 0.25px;
+}
+/*INCLINAISON DES 3 ELEMENTS DE L'ATOME*/
+button:hover .barre:nth-child(1) {
+  transform: rotate(-33deg);
+}
+
+button:hover .barre:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+button:hover .barre:nth-child(3) {
+  transform: rotate(33deg);
+}
+
+button:hover .barre:nth-child(3):before {
+  opacity: 1;
+  transition: opacity 600ms cubic-bezier(.61, .01, .42, 1);
+  ;
+}
+
+button:active:hover .barre:nth-child(3):before,
+button:active .barre:nth-child(3):before,
+button:active .barre:nth-child(2) {
+  opacity: 0;
+  transition: all 200ms;
+}
+
+button:active .barre 
+{
+    border: 1.5px solid transparent;
+    height: 0px;
+    border-radius: 0%;
+    margin-left: -1px;
+    margin-top: 6px;
+    animation: division 300ms linear 1;
+    width: 25px;
+    top: 0px;
+}
+
+button:active .barre:nth-child(2) {
+  width: 0px;
+}
+
+button:active .barre:nth-child(3) {
+  transform: rotate(45deg);
+}
+
+button:active .barre:nth-child(1) {
+  transform: rotate(-45deg);
+}
+
+@keyframes atom {
+  0% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes division {
+  0% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes ball {
+  0% {
+    left: -20%;
+    top: 10%;
+  }
+  10% {
+    left: 10%;
+    top: -35%;
+  }
+  25% {
+    left: 45%;
+    top: -50%;
+  }
+  40% {
+    left: 80%;
+    top: -20%;
+  }
+  50% {
+    left: 98%;
+    top: 18%;
+  }
+  60% {
+    left: 80%;
+    top: 50%;
+  }
+  75% {
+    left: 45%;
+    top: 80%;
+  }
+  90% {
+    left: 0%;
+    top: 60%;
+  }
+  100% {
+    left: -20%;
+    top: 10%;
+  }
 }
