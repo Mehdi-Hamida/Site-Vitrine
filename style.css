@@ -1,9 +1,21 @@
 /*********************************GENERAL*********************************/
+/*DESACTIVATION DU SCROLLING VERTICAL*/
 html 
 {
     margin: 0;
     padding: 0;
     width: 100%;
+    /*overflow: hidden;*/
+    scroll-behavior: smooth;
+}
+
+/*POUR LES PERSONNES ATTEINTES DE TROUBLES DU SYSTEME VESTIBULAIRES*/
+@media (prefers-reduced-motion: reduce)
+{
+    html
+    {
+        scroll-behavior: auto;
+    }
 }
 
 /*TOUS LES TEXTES EN ECRITURES FINES PAR DEFAUT*/
@@ -36,6 +48,12 @@ body
     padding: 0;
 }
 
+#accueil
+{
+    height: 100vh;
+    width: 100vw;
+}
+
 /*CHAQUE SECTION FAIT LA TAILLE DE L'ECRAN EN HAUTEUR, LE PADDING TOP SERT A COMPENSER LA HAUTEUR DE LA NAVBAR POUR NE PAS CACHER DES ELEMENTS DERRIERE CETTE DERNIERE*/
 #a_propos,
 #competences,
@@ -44,7 +62,7 @@ footer
 {
     height: 100vh;
     width: 100vw;
-    padding-top: 12vh;
+    padding-top: 8vh;
 }
 
 #nom, h4, blockquote, p
@@ -91,12 +109,7 @@ h1, h2, h3, #explorer
 
 
 /*CENTRER LE TEXTE ET LE FAIRE PASSER AU-DESSUS DU BACKGROUND PARTICLES*/
-h1,
-h3,
-h4,
-blockquote,
-#logo,
-.suivant 
+h1, h3, h4, blockquote, #logo, #suivant1, #suivant2, #suivant3, #suivant4
 {
     background-color: transparent;
     position: absolute;
@@ -159,7 +172,7 @@ blockquote
     line-height: 1.5em;
 }
 
-/*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON ".SUIVANT"*/
+/*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON "#SUIVANT"*/
 .bouton
 {
     /*margin-left: 21vh;
@@ -171,15 +184,25 @@ blockquote
     position: absolute;
 }
 
-.suivant 
+#suivant1
 {
     /*margin-top: 96vh;*/
     /*position: absolute;*/
-    height: 5vh;
-    width: 5vh;
+    height: 6vh;
+    width: 6vh;
     /*margin-left: auto;
     margin-right: auto;*/
     background-image: url(img/triangle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#suivant2, #suivant3, #suivant4
+{
+    height: 6vh;
+    width: 6vh;
+    background-image: url(img/triangle2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -200,30 +223,57 @@ blockquote
 /******************************FIN ACCUEIL**********************************/
 
 /********************************A PROPOS***********************************/
+    
+#a_propos
+{
+    background-image: url(img/a_propos_background2.PNG);
+    /*background-size: 100vw 100vh;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .presentation
 {
-    width: 80vw;
-    height: 75vh;
-    padding-top: 9vh ;
+    width: 85vw;
+    height: auto;
+    background-color: black;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-top: 4vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border: solid 0.01rem darkgoldenrod;
+    text-align: justify;
+    font-size: 2.5vh;
 }
 
 /******************************FIN A PROPOS*********************************/
 
+/******************************COMPETENCES**********************************/
+
+#competences
+{
+    background-image: url(img/competences_background3.png);
+    /*background-size: 100vw 100vh;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 
 
-
-
-
+/****************************FIN COMPETENCES********************************/
 
 
 
 /*////////////////////////////MEDIA QUERIES////////////////////////////////*/
 
 /********************************MOBILES***********************************/
+/*ACCUEIL*/
 @media (max-width: 768px) and (max-height: 1023px) {
     .navbar 
     {
@@ -306,17 +356,18 @@ blockquote
         margin-left: 70vw;
     }
     
-/* !!! LE POSITIONNEMENT DES .SUIVANTS ET #EXPLORER DEPENDENT DE LA TAILLE DU CONTENU AU-DESSUS D'EUX !!! */
-    .suivant 
-    {
-        margin-bottom: -2vh;
-        height: 6vh;
-        width: 6vh;
-    }
+/* !!! LE POSITIONNEMENT DES #SUIVANTS ET #EXPLORER DEPENDENT DE LA TAILLE DU CONTENU AU-DESSUS D'EUX !!! */
     
     #explorer
     {
-        margin-top: -10vh;
+        margin-top: -8vh;
+    }
+    
+/*A PROPOS*/
+
+    #suivant2
+    {
+        margin-top: 3.5vh;
     }
 
 }
