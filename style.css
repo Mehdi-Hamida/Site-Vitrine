@@ -33,9 +33,9 @@ html
 /*BACKGROUND FONCE ET ECRITURES DOREES SUR TOUT LE SITE*/
 body 
 {
-    background-color: #0d0d0d;
+    background-color: black;
 }
-
+;
 /*BACKGROUND ANIME*/
 #particles-js 
 {
@@ -257,7 +257,7 @@ blockquote
 
 #competences
 {
-    background-image: url(img/competences_background3.png);
+    background-image: url(img/competences_background4.png);
     /*background-size: 100vw 100vh;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -267,6 +267,54 @@ blockquote
 
 
 /****************************FIN COMPETENCES********************************/
+
+/********************************PROJETS************************************/
+#projets
+{
+    background-image: url(img/marble.png);
+    /*background-size: 100vw 100vh;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/******************************FIN PROJETS**********************************/
+
+/**************************POUR ALLER PLUS LOIN*****************************/
+/*#pour_aller_plus_loin
+{
+    background-image: url(img/competences_background4.png);
+    /*background-size: 100vw 100vh;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.handwriting
+{
+    width: 85%;
+    height: 50%;
+    position: static;
+    transition: all 1s ease;
+    transition-delay: 1s;
+}
+
+svg
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.text
+{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: animate 8s linear 1 forwards;
+}
+
+/************************FIN POUR ALLER PLUS LOIN***************************/
 
 
 
@@ -390,15 +438,15 @@ blockquote
     
 /***********************ANIMATION ATOME MENU NAVBAR*************************/
 button {
-  /*position: absolute;*/
-  top: 50%;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  transition: all 300ms cubic-bezier(.61, .01, .42, 1);
-  cursor: pointer;
-  background: transparent;
-  border: 0px;
+    /*position: absolute;*/
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transition: all 300ms cubic-bezier(.61, .01, .42, 1);
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
     animation: 0;
 }
 /*PROPRIETES DES BARRES HORS ANIMATION*/
@@ -607,4 +655,11 @@ button:active .barre:nth-child(1)
     }
 }
 
-/***********************ANIMATION ?*************************/
+/***********************ANIMATION SIGNATURE FOOTER*************************/
+
+@keyframes animate
+{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
