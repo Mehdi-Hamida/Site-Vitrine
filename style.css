@@ -35,17 +35,20 @@ body
 {
     background-color: black;
 }
-;
-/*BACKGROUND ANIME*/
-#particles-js 
+
+/*POUR ANNULER LE PADDING DE BASE DU CONTAINER-FLUID*/
+.container-fluid
 {
-    /*height: 100vh;
-    width: 100vw;
-    padding: 0;*/
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*BACKGROUND ANIME*/
+#particles-js
+{
     /*position: absolute;*/
     width: 100vw;
     height: 100vh;
-    padding: 0;
 }
 
 #accueil
@@ -226,7 +229,7 @@ blockquote
     
 #a_propos
 {
-    background-image: url(img/a_propos_background2.PNG);
+    background-image: url(img/a_propos_background.PNG);
     /*background-size: 100vw 100vh;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,12 +260,11 @@ blockquote
 
 #competences
 {
-    background-image: url(img/competences_background4.png);
+    background-image: url(img/competences_background.png);
     /*background-size: 100vw 100vh;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 
@@ -271,7 +273,7 @@ blockquote
 /********************************PROJETS************************************/
 #projets
 {
-    background-image: url(img/marble.png);
+    background-image: url(img/projets_background.PNG);
     /*background-size: 100vw 100vh;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,9 +284,9 @@ blockquote
 /******************************FIN PROJETS**********************************/
 
 /**************************POUR ALLER PLUS LOIN*****************************/
-/*#pour_aller_plus_loin
+#pour_aller_plus_loin
 {
-    background-image: url(img/competences_background4.png);
+    background-image: url(img/pour_aller_plus_loin_background.png);
     /*background-size: 100vw 100vh;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,9 +295,14 @@ blockquote
 
 .handwriting
 {
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 40vh;
     width: 85%;
-    height: 50%;
-    position: static;
+    height: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 1s ease;
     transition-delay: 1s;
 }
@@ -329,6 +336,12 @@ svg
         border-bottom: solid 0.01rem #4d3d00;
         font-size: 1.5rem;
         height: 3rem;
+    }
+    
+    #particles-js
+    {
+        height: 100vh;
+        width: 100vw;
     }
 
     nav img
@@ -408,16 +421,22 @@ svg
     
     #explorer
     {
-        margin-top: -8vh;
+        margin-top: -12vh;
     }
-    
-/*A PROPOS*/
 
-    #suivant2
+    #suivant1
     {
-        margin-top: 3.5vh;
+        margin-top: 2vh;
     }
 
+    /*A PROPOS*/
+    
+    /*COMPETENCES*/
+    
+    /*PROJETS*/
+    
+    /*POUR ALLER PLUS LOIN*/
+    
 }
 
 /********************************TABLETTES***********************************/
