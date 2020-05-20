@@ -40,6 +40,7 @@ particlesJS('particles-js',
           "height": 100
         }
       },
+    /*VALEURS BES CERCLES*/
       "opacity": {
         "value": 0.1,
         "random": false,
@@ -62,14 +63,14 @@ particlesJS('particles-js',
       },
       "line_linked": {
         "enable": true,
-        "distance": 150,
-        "color": "#757576",
-        "opacity": 0.3,
+        "distance": 200,
+        "color": "#806000",
+        "opacity": 0.4,
         "width": 0.5
       },
       "move": {
         "enable": true,
-        "speed": 4.5,
+        "speed": 2,
         "direction": "none",
         "random": false,
         "straight": false,
