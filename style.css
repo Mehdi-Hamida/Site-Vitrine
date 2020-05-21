@@ -68,7 +68,7 @@ footer
     padding-top: 8vh;
 }
 
-#nom, h4, blockquote, p
+#nom, blockquote, p
 {
     color: #a6a6a6;
 }
@@ -101,9 +101,10 @@ h1, h2, h3, #explorer
 }
 
 /*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
-.navbar-nav a.nav-link.active 
+.navbar-nav a.nav-link .active 
 {
     color: darkgoldenrod !important;
+    background-color: black;
 }
 
 /********************************FIN NAVBAR**********************************/
@@ -112,7 +113,7 @@ h1, h2, h3, #explorer
 
 
 /*CENTRER LE TEXTE ET LE FAIRE PASSER AU-DESSUS DU BACKGROUND PARTICLES*/
-h1, h3, h4, blockquote, #logo, #suivant1, #suivant2, #suivant3, #suivant4
+h1, h3, blockquote, #logo, #suivant1, #suivant2, #suivant3, #suivant4
 {
     background-color: transparent;
     position: absolute;
@@ -122,20 +123,12 @@ h1, h3, h4, blockquote, #logo, #suivant1, #suivant2, #suivant3, #suivant4
     /*z-index: 2;*/
 }
 
-h4
-{
-    margin-top: 12rem;
-    width: auto;
-    min-width: 19rem;
-    font-size: 8vw;
-}
-
 #logo 
 {
     margin-top: 7.5rem;
     width: 5rem;
     height: 5rem;
-    background-image: url(img/logo_initiales2.PNG);
+    background-image: url(img/logo_initiales.PNG);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,20 +247,56 @@ blockquote
     font-size: 2.5vh;
 }
 
+#suivant2
+{
+    margin-top: 1vh;
+}
+
 /******************************FIN A PROPOS*********************************/
 
 /******************************COMPETENCES**********************************/
 
 #competences
 {
-    background-image: url(img/competences_background.png);
+    /*background-image: url(img/competences_background.png);*/
     /*background-size: 100vw 100vh;*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.carousel-inner
+{
+    height: 77vh;
+}
 
+h4
+{
+    font-family: 'Argesta Headline';
+    font-size: 1rem;
+    color: darkgoldenrod;
+}
+
+/*CHANGE LA COULEUR DE L'INDICATEUR EN-DESSOUS DU CAROUSEL*/
+.carousel-indicators .active
+{
+    background-color: darkgoldenrod!important;
+    opacity: 1;
+}
+
+#suivant3
+{
+    margin-top: 1rem;
+}
+
+.carousel-item
+{
+    background-image: url(img/css3logo.PNG);
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
 /****************************FIN COMPETENCES********************************/
 
 /********************************PROJETS************************************/
@@ -281,6 +310,22 @@ blockquote
 
 }
 
+/*DIV QUI CONTIENT LES CARTES DE PRESENTATION*/
+.card-group
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    width: 80vw;
+}
+/*SELECTEUR QUI DESIGNE CHAQUE ELEMENT CARTE*/
+.card
+{
+    height: 20vh;
+    width: 30vw;
+}
 /******************************FIN PROJETS**********************************/
 
 /**************************POUR ALLER PLUS LOIN*****************************/
@@ -379,12 +424,6 @@ svg
     {
         font-size: 2rem;
         margin-top: 42vh;
-    }
-
-    h4
-    {
-        font-size: /*1.7*/2rem;
-        margin-top: 10rem;
     }
 
     blockquote 
