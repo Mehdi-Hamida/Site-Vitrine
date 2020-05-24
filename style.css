@@ -78,6 +78,16 @@ h1, h2, h3, #explorer
     color: darkgoldenrod;
 }
 
+#suivant2, #suivant3, #suivant4
+{
+    height: 6vh;
+    width: 6vh;
+    background-image: url(img/triangle2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /*******************************DEBUT NAVBAR********************************/
 
 .navbar 
@@ -160,12 +170,19 @@ h2
 blockquote 
 {
     margin-top: 34rem;
-    font-size:
-        /*2em*/
-        200%;
+    font-size: 200%;
     text-align: center;
-    quotes: "“""”";
+    /*quotes: "“""”";*/
     line-height: 1.5em;
+}
+
+.quote1,
+.quote2 
+{
+    position: absolute;
+    font-family: 'arial', sans-serif;
+    color: darkgoldenrod;
+    font-size: 5rem;
 }
 
 /*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON "#SUIVANT"*/
@@ -189,16 +206,6 @@ blockquote
     /*margin-left: auto;
     margin-right: auto;*/
     background-image: url(img/triangle.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#suivant2, #suivant3, #suivant4
-{
-    height: 6vh;
-    width: 6vh;
-    background-image: url(img/triangle2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -231,20 +238,20 @@ blockquote
 
 .presentation
 {
-    width: 85vw;
-    height: auto;
+    width: 90%;
+    height: 80%;
     background-color: black;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
     margin-top: 4vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     border: solid 0.01rem darkgoldenrod;
     text-align: justify;
-    font-size: 2.5vh;
+    font-size: 1.1rem;
 }
 
 #suivant2
@@ -435,14 +442,6 @@ svg
     }
 
     /*AJOUT DE GUILLEMETS*/
-    .quote1,
-    .quote2 
-    {
-        position: absolute;
-        font-family: 'arial'/*sans-serif*/;
-        color: darkgoldenrod;
-        font-size: 5rem;
-    }
 
     .quote1 
     {
