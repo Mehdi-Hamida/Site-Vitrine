@@ -61,12 +61,13 @@ particlesJS('particles-js',
           "sync": false
         }
       },
+    /*VALEURS DES LIGNES*/
       "line_linked": {
         "enable": true,
         "distance": 200,
         "color": "#806000",
-        "opacity": 0.4,
-        "width": 0.5
+        "opacity": 0.3,
+        "width": 0.7
       },
       "move": {
         "enable": true,
