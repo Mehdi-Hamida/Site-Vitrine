@@ -78,6 +78,16 @@ h1, h2, h3, #explorer
     color: darkgoldenrod;
 }
 
+#suivant1, #suivant2, #suivant3, #suivant4
+{
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
 #suivant2, #suivant3, #suivant4
 {
     height: 6vh;
@@ -92,130 +102,51 @@ h1, h2, h3, #explorer
 
 .navbar 
 {
-    border-bottom: solid 0.01rem #4d3d00;
+    /*border-bottom: solid 0.01rem #4d3d00;*/
     font-size: 1.5rem;
     height:3vh;
+    background-color: transparent!important;
 }
 
 .navbar-toggler, .navbar-toggler-icon
 {
     width: 2.3rem;
     height: 2.3rem;
-    border-color: #a6a6a6!important;
+    border-color: transparent!important;
 }
 
+/*
 #nom 
 {
     font-size: 1.7rem;
     margin-left: -0.9rem;
 }
+*/
 
 /*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
 .navbar-nav a.nav-link .active 
 {
-    color: darkgoldenrod !important;
-    background-color: black;
-}
-
-/*COUVRIR ENTIEREMENT LA PAGE AVEC LE MENU*/
-#navbarNav
-{
-    background-color: black;
-    height: 100vh;
-    width: 100%;
-    margin-left: -5%;
-    margin-right: -5%;
-    margin-top: -0.5%;
-}
-
-/*BAISSER ACCUEIL*/
-#page-scroll
-{
-    margin-top: 17%;
-    font-size: 2.1rem;
-}
-
-.nav-link
-{
-    margin-bottom: 10%;
-    font-size: 2.1rem;
-}
-
-.nav-link:hover
-{
     color: darkgoldenrod!important;
+    background-color: black;
 }
 
-.navbar-dark .navbar-nav .nav-link.active
+.d-inline-block
 {
-    color: #a6a6a6;
+    display: block!important;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /********************************FIN NAVBAR**********************************/
 
 /*********************************ACCUEIL************************************/
 
-
-/*CENTRER LE TEXTE ET LE FAIRE PASSER AU-DESSUS DU BACKGROUND PARTICLES*/
-h1, h3, blockquote, #logo, #suivant1, #suivant2, #suivant3, #suivant4
-{
-    background-color: transparent;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    /*z-index: 2;*/
-}
-
-#logo 
-{
-    margin-top: 7.5rem;
-    width: 5rem;
-    height: 5rem;
-    background-image: url(img/logo_initiales.PNG);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-h1 
-{
-    margin-top: 50vh;
-    width: 95%;
-    font-size: 320%;
-}
-
-.lyon 
-{
-    font-family: 'Argesta Headline';
-    text-align: center;
-    font-size: 2.7rem;
-    margin-top: 48vh;
-    color: darkgoldenrod;
-}
-
-h1,
-h2 
-{
-    font-family: 'Argesta Headline';
-    text-align: center;
-}
-
-blockquote 
-{
-    margin-top: 34rem;
-    font-size: 200%;
-    text-align: center;
-    /*quotes: "“""”";*/
-    line-height: 1.5em;
-}
-
-.quote1,
-.quote2 
+svg
 {
     position: absolute;
-    font-family: 'arial', sans-serif;
-    color: darkgoldenrod;
-    font-size: 5rem;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
 }
 
 /*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON "#SUIVANT"*/
@@ -269,27 +200,59 @@ blockquote
     background-position: center;
 }
 
-.presentation
+h1 
 {
-    width: 90%;
-    height: 80%;
-    background-color: black;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    margin-top: 4vh;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 50vh;
+    width: 95%;
+    font-size: 320%;
+}
+
+.lyon 
+{
+    font-family: 'Argesta Headline';
     text-align: center;
-    border: solid 0.01rem darkgoldenrod;
-    text-align: justify;
-    font-size: 1.1rem;
+    font-size: 2.7rem;
+    margin-top: 48vh;
+    color: darkgoldenrod;
+}
+
+h1,
+h2 
+{
+    font-family: 'Argesta Headline';
+    text-align: center;
+}
+
+blockquote 
+{
+    margin-top: 34rem;
+    font-size: 200%;
+    text-align: center;
+    /*quotes: "“""”";*/
+    line-height: 1.5em;
+}
+
+h1, h3, blockquote
+{
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.quote1,
+.quote2 
+{
+    position: absolute;
+    font-family: 'arial', sans-serif;
+    color: darkgoldenrod;
+    font-size: 5rem;
 }
 
 #suivant2
 {
-    margin-top: 1vh;
+    margin-top: 79.2vh;
 }
 
 /******************************FIN A PROPOS*********************************/
@@ -382,10 +345,11 @@ h4
     background-position: center;
 }
 
+/*
 .handwriting
 {
-    /*margin-left: auto;
-    margin-right: auto;*/
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 40vh;
     width: 85%;
     height: 70%;
@@ -402,6 +366,7 @@ svg
     width: 100%;
     height: 100%;
 }
+*/
 
 .text
 {
@@ -419,14 +384,55 @@ svg
 /*////////////////////////////MEDIA QUERIES////////////////////////////////*/
 
 /********************************MOBILES***********************************/
-/*ACCUEIL*/
+/*****ACCUEIL*****/
 @media (max-width: 768px) and (max-height: 1023px) {
     .navbar 
     {
-        background-color: #0d0d0d;
-        border-bottom: solid 0.01rem #4d3d00;
+        /*background-color: #0d0d0d;
+        border-bottom: solid 0.01rem #4d3d00;*/
         font-size: 1.5rem;
         height: 7.2vh;/*3rem*/
+    }
+    
+    /*COUVRIR ENTIEREMENT LA PAGE AVEC LE MENU*/
+    #navbarNav
+    {
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        margin-left: -5%;
+        margin-right: -5%;
+        margin-top: -0.5%;
+    }
+
+    /*BAISSER ACCUEIL*/
+    #page-scroll
+    {
+        margin-top: 17%;
+        font-size: 2.1rem;
+    }
+    
+    .nav-link
+    {
+        margin-bottom: 10%;
+        font-size: 2.1rem;
+    }
+
+    .nav-link:hover
+    {
+        color: darkgoldenrod!important;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active
+    {
+        color: /*#a6a6a6*/darkgoldenrod;
+    }
+    
+        nav img
+    {
+        width: 2.7rem;
+        height: 2.7rem;
+        margin-top: -0.7rem;
     }
     
     #particles-js
@@ -434,47 +440,56 @@ svg
         height: 100vh;
         width: 100vw;
     }
-
-    nav img
-    {
-        width: 2.7rem;
-        height: 2.7rem;
-        margin-top: -0.7rem;
-    }
     
+    svg
+    {
+        position: absolute;
+        margin-top: 43%;
+        width: 100%;
+        height: 100%;
+    }
+/*
     #nom 
     {
         font-size: 1.8rem;
         margin-top: -0.6rem;
     }
+*/
 
     button
     {
         margin-top: -0.6rem;
     }
     
-    #logo 
+/* !!! LE POSITIONNEMENT DES #SUIVANTS ET #EXPLORER DEPENDENT DE LA TAILLE DU CONTENU AU-DESSUS D'EUX !!! */
+    
+    #explorer
     {
-        width: 4rem;
-        height: 4rem;
-        margin-top: 6.5rem;
+        margin-top: -12vh;
     }
 
+    #suivant1
+    {
+        margin-top: 2vh;
+    }
+
+    /*****A PROPOS*****/
+    
     h1 
     {
-        font-size: 2.3rem;
-        margin-top: 34vh;
+        font-size: /*2.6rem*/11vw;
+        margin-top: 20vh;
     }
 
     .lyon 
     {
-        font-size: 2rem;
-        margin-top: 42vh;
+        font-size: 9vw;
+        margin-top: 28vh;
     }
 
     blockquote 
     {
-        margin-top: 67vh;
+        margin-top: 50vh;
         font-size: 7.4vw;
         width: 70vw;
         text-align: center;
@@ -494,25 +509,11 @@ svg
         margin-left: 70vw;
     }
     
-/* !!! LE POSITIONNEMENT DES #SUIVANTS ET #EXPLORER DEPENDENT DE LA TAILLE DU CONTENU AU-DESSUS D'EUX !!! */
+    /*****COMPETENCES*****/
     
-    #explorer
-    {
-        margin-top: -12vh;
-    }
-
-    #suivant1
-    {
-        margin-top: 2vh;
-    }
-
-    /*A PROPOS*/
+    /*****PROJETS*****/
     
-    /*COMPETENCES*/
-    
-    /*PROJETS*/
-    
-    /*POUR ALLER PLUS LOIN*/
+    /*****POUR ALLER PLUS LOIN*****/
     
 }
 
