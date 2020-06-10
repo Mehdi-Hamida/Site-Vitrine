@@ -4,8 +4,8 @@ html
 {
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow: hidden;
+    width: 100vw;
+/*    overflow: hidden;*/
     scroll-behavior: smooth;
 }
 
@@ -34,6 +34,9 @@ html
 body 
 {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 /*POUR ANNULER LE PADDING DE BASE DU CONTAINER-FLUID*/
@@ -41,20 +44,6 @@ body
 {
     padding-left: 0px;
     padding-right: 0px;
-}
-
-/*BACKGROUND ANIME*/
-#particles-js
-{
-    /*position: absolute;*/
-    width: 100vw;
-    height: 100vh;
-}
-
-#accueil
-{
-    height: 100vh;
-    width: 100vw;
 }
 
 /*CHAQUE SECTION FAIT LA TAILLE DE L'ECRAN EN HAUTEUR, LE PADDING TOP SERT A COMPENSER LA HAUTEUR DE LA NAVBAR POUR NE PAS CACHER DES ELEMENTS DERRIERE CETTE DERNIERE*/
@@ -68,7 +57,7 @@ footer
     padding-top: 8vh;
 }
 
-#nom, blockquote, p
+blockquote, p
 {
     color: #a6a6a6;
 }
@@ -96,6 +85,12 @@ h1, h2, h3, #explorer
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/*N'AFFICHE PAS LES SCROLLTOPS SUR PC*/
+#scrolltop1 img, #scrolltop2 img, #scrolltop3 img, #scrolltop4 img
+{
+    display: none;
 }
 
 /*******************************DEBUT NAVBAR********************************/
@@ -141,12 +136,27 @@ h1, h2, h3, #explorer
 
 /*********************************ACCUEIL************************************/
 
+/*BACKGROUND ANIME*/
+#particles-js
+{
+    /*position: absolute;*/
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+}
+
+#accueil
+{
+    height: 100vh;
+    width: 100vw;
+}
+
 svg
 {
     position: absolute;
-    margin-top: 20%;
+    margin-top: 23%;
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 
 /*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON "#SUIVANT"*/
@@ -163,8 +173,8 @@ svg
 
 #suivant1
 {
-    /*margin-top: 96vh;*/
-    /*position: absolute;*/
+    margin-top: -3vh;
+    position: absolute;
     height: 6vh;
     width: 6vh;
     /*margin-left: auto;
@@ -177,9 +187,11 @@ svg
 
 #explorer 
 {
-    /*position: absolute;*/
-    /*margin-top: -4rem;
-    margin-bottom: 0.19rem;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-top: -4.5rem;
+    /*margin-bottom: 0.19rem;*/
     margin-left: auto;
     text-align: center;
     font-size: 0.7rem;
@@ -187,6 +199,7 @@ svg
     background-color: transparent;
     /*bottom: 50vh;*/
 }
+
 /******************************FIN ACCUEIL**********************************/
 
 /********************************A PROPOS***********************************/
@@ -202,7 +215,7 @@ svg
 
 h1 
 {
-    margin-top: 50vh;
+    margin-top: 25vh;
     width: 95%;
     font-size: 320%;
 }
@@ -212,7 +225,7 @@ h1
     font-family: 'Argesta Headline';
     text-align: center;
     font-size: 2.7rem;
-    margin-top: 48vh;
+    margin-top: 33vh;
     color: darkgoldenrod;
 }
 
@@ -225,7 +238,8 @@ h2
 
 blockquote 
 {
-    margin-top: 34rem;
+    width: 25%;
+    margin-top: 30rem;
     font-size: 200%;
     text-align: center;
     /*quotes: "“""”";*/
@@ -247,12 +261,17 @@ h1, h3, blockquote
     position: absolute;
     font-family: 'arial', sans-serif;
     color: darkgoldenrod;
-    font-size: 5rem;
+    font-size: 3rem;
+}
+
+.quote2 
+{
+    margin-left: 25rem;
 }
 
 #suivant2
 {
-    margin-top: 79.2vh;
+    margin-top: 84vh;
 }
 
 /******************************FIN A PROPOS*********************************/
@@ -261,8 +280,8 @@ h1, h3, blockquote
 
 #competences
 {
-    /*background-image: url(img/competences_background.png);*/
-    /*background-size: 100vw 100vh;*/
+    background-image: url(img/698.png);
+    background-size: 100vw 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -271,6 +290,11 @@ h1, h3, blockquote
 .carousel-inner
 {
     height: 77vh;
+}
+
+.carousel-caption
+{
+    margin-bottom: -15vh;
 }
 
 h4
@@ -284,22 +308,34 @@ h4
 .carousel-indicators .active
 {
     background-color: darkgoldenrod!important;
-    opacity: 1;
+}
+
+.carousel-indicators li
+{
+    background-color: #262626;
 }
 
 #suivant3
 {
-    margin-top: 1rem;
+    margin-top: 7vh;
 }
 
 .carousel-item
 {
+/*
     background-image: url(img/css3logo.PNG);
-        background-size: cover;
+    background-size:auto;
     background-repeat: no-repeat;
     background-position: center;
-    
+*/
 }
+
+.d-block
+{
+    margin: auto;
+    margin-top: 30vh;
+}
+
 /****************************FIN COMPETENCES********************************/
 
 /********************************PROJETS************************************/
@@ -333,46 +369,27 @@ h4
     border: solid 0.05rem darkgoldenrod;
     background-color: black;
 }
+
+.card-body h4
+{
+    font-family: 'Alegreya Sans';
+    font-size: 1rem;
+    color: #a6a6a6;
+}
+
+#suivant4
+{
+    margin-top: 1vh;
+}
 /******************************FIN PROJETS**********************************/
 
 /**************************POUR ALLER PLUS LOIN*****************************/
 #pour_aller_plus_loin
 {
-    background-image: url(img/pour_aller_plus_loin_background.png);
-    /*background-size: 100vw 100vh;*/
+    background-image: url(img/7773.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-/*
-.handwriting
-{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40vh;
-    width: 85%;
-    height: 70%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 1s ease;
-    transition-delay: 1s;
-}
-
-svg
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-*/
-
-.text
-{
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation: animate 8s linear 1 forwards;
+    background-position: bottom;
 }
 
 /************************FIN POUR ALLER PLUS LOIN***************************/
@@ -397,7 +414,6 @@ svg
     /*COUVRIR ENTIEREMENT LA PAGE AVEC LE MENU*/
     #navbarNav
     {
-/*        background-image: url(img/pour_aller_plus_loin_background.png);*/
         backdrop-filter: blur(10px);
         height: 100vh;
         width: 100%;
@@ -411,6 +427,43 @@ svg
     {
         margin-top: 17%;
         font-size: 2.1rem;
+    }
+    
+    #scrolltop1 img, #scrolltop2 img, #scrolltop3 img, #scrolltop4 img
+    {
+        display: block;
+        position: static;
+    /*
+        bottom: 10px;
+        right: 10px;
+    */
+        margin-left: 91.5vw;
+        margin-top: 90vh;
+    /*
+        background-image: url(img/scrolltop.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    */
+        cursor: pointer;
+        height: 4vh;
+        width: 8.5vw;
+        opacity: 0.5;
+    }
+
+    #scrolltop2 img
+    {
+        margin-top: 11.5vh;
+    }
+
+    #scrolltop3 img
+    {
+        margin-top: -1.5vh;
+    }
+    
+    #scrolltop4 img
+    {
+        margin-top: 82vh;
     }
 
 /**********ACCUEIL**********/
@@ -440,8 +493,8 @@ svg
     
     nav img
     {
-        width: 2.7rem;
-        height: 2.6rem;
+        width: 2.4rem;
+        height: 2.5rem;
         margin-top: -0.7rem;
     }
     
@@ -467,10 +520,25 @@ svg
     svg
     {
         position: absolute;
-        margin-top: 43%;
-        width: 100%;
-        height: 100%;
+        margin-top: 65%;
+        z-index: 2;
+/*
+        width: 80%;
+        height: 50%;
+*/
     }
+    
+/*
+    #blurred
+    {
+        position: absolute;
+        z-index: 1;
+        margin-top: 39vh;
+        width: 100vw;
+        height: 4rem;
+        backdrop-filter: blur(0.8px);
+    }
+*/
 
     button
     {
@@ -479,32 +547,32 @@ svg
     
     #explorer
     {
-        margin-top: -12vh;
+        margin-top: -10vh;
     }
 
     #suivant1
     {
-        margin-top: 2vh;
+        margin-top: -4vh;
     }
 
     /**********A PROPOS***************/
     
     h1 
     {
-        font-size: /*2.6rem*/11vw;
+        font-size: /*2.6rem*/9vw;
         margin-top: 25vh;
     }
 
     .lyon 
     {
-        font-size: 9vw;
-        margin-top: 33vh;
+        font-size: 7vw;
+        margin-top: 31vh;
     }
 
     blockquote 
     {
-        margin-top: 55vh;
-        font-size: 7.4vw;
+        margin-top: 50vh;
+        font-size: 5.5vw;
         width: 70vw;
         text-align: center;
     }
@@ -520,7 +588,7 @@ svg
     .quote2 
     {
         margin-top: 1vh;
-        margin-left: 70vw;
+        margin-left: 72vw;
     }
     
     #suivant2
@@ -535,6 +603,26 @@ svg
         margin-top: 10.5vh;
     }
     
+    .carousel-item
+    {
+/*
+        background-image: url(img/css3logo.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+*/
+    }
+    
+    .carousel-caption
+    {
+        margin-bottom: -25vh;
+    }
+    
+    .d-block
+    {
+        margin: auto;
+        margin-top: 25vh;
+    }
     /**********PROJETS**********/
     
     .card_group
