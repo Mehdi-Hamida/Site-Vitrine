@@ -159,6 +159,13 @@ svg
     height: 50%;
 }
 
+.text
+{
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: animate 8s linear 1 forwards;
+}
+
 /*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON "#SUIVANT"*/
 .bouton
 {
@@ -451,6 +458,11 @@ h4
         opacity: 0.5;
     }
 
+    #scrolltop1 img
+    {
+        margin-top: 89.5vh;
+    }
+    
     #scrolltop2 img
     {
         margin-top: 11.5vh;
@@ -458,12 +470,12 @@ h4
 
     #scrolltop3 img
     {
-        margin-top: -1.5vh;
+        margin-top: 2.5vh;
     }
     
     #scrolltop4 img
     {
-        margin-top: 82vh;
+        margin-top: 89.5vh;
     }
 
 /**********ACCUEIL**********/
