@@ -453,8 +453,8 @@ h4
         background-position: center;
     */
         cursor: pointer;
-        height: 4vh;
-        width: 8.5vw;
+        height: 1.7rem;
+        width: 2rem;
         opacity: 0.5;
     }
 
@@ -532,7 +532,7 @@ h4
     svg
     {
         position: absolute;
-        margin-top: 65%;
+        margin-top: 75%;
         z-index: 2;
 /*
         width: 80%;
@@ -559,7 +559,7 @@ h4
     
     #explorer
     {
-        margin-top: -10vh;
+        margin-top: -8.5vh;
     }
 
     #suivant1
