@@ -245,6 +245,19 @@
     <!--************************************************************POUR ALLER PLUS LOIN************************************************************-->
     <footer id="pour_aller_plus_loin">
         <h2>Pour aller plus loin</h2>
+        <p id="fusee">La fusée va bientôt décoller...<br />Voulez-vous faire partie du voyage?</p>
+        <div id="contact">C'est parti !
+            <div id="telephone">06 50 58 94 76</div>
+            <a href="mailto:mehdihamida.dev@gmail.com">
+                <div id="mail">Mehdihamida.dev@gmail.com</div>
+            </a>
+        </div>
+        <div id="doutes">Encore des doutes ?
+            <div id="linkedin"></div>
+            <div id="cv">CV</div>
+            <div id="github"></div>
+            <div id="equipage">C'est toujours important de bien connaître son équipage !</div>
+        </div>
         <a href="#projets" id="scrolltop4">
             <img src="img/scrolltop.png" alt="" title="" />
         </a>
@@ -254,6 +267,86 @@
     <script type="text/javascript" src="particles.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <!--FIN SCRIPT PARTICULES-->
+    <!--AFFICHER DES DIVS AU CLIC-->
+    <script>
+        let togg1 = document.getElementById("contact");
+        let d1 = document.getElementById("telephone");
+        let d2 = document.getElementById("mail");
+
+        togg1.addEventListener("click", () => {
+            if (getComputedStyle(d1).display != "none") {
+                d1.style.display = "none";
+            } else {
+                d1.style.display = "block";
+            }
+        })
+
+        togg1.addEventListener("click", () => {
+            if (getComputedStyle(d2).display != "none") {
+                d2.style.display = "none";
+            } else {
+                d2.style.display = "block";
+            }
+        })
+
+        //        function togg() {
+        //            if (getComputedStyle(d2).display != "none") {
+        //                d2.style.display = "none";
+        //            } else {
+        //                d2.style.display = "block";
+        //            }
+        //        };
+        //        togg2.onclick = togg;
+
+
+        let togg2 = document.getElementById("doutes");
+        let d3 = document.getElementById("linkedin");
+        let d4 = document.getElementById("cv");
+        let d5 = document.getElementById("github");
+        let d6 = document.getElementById("equipage");
+
+        togg2.addEventListener("click", () => {
+            if (getComputedStyle(d3).display != "none") {
+                d3.style.display = "none";
+            } else {
+                d3.style.display = "block";
+            }
+        })
+
+        togg2.addEventListener("click", () => {
+            if (getComputedStyle(d4).display != "none") {
+                d4.style.display = "none";
+            } else {
+                d4.style.display = "block";
+            }
+        })
+
+        togg2.addEventListener("click", () => {
+            if (getComputedStyle(d5).display != "none") {
+                d5.style.display = "none";
+            } else {
+                d5.style.display = "block";
+            }
+        })
+
+        togg2.addEventListener("click", () => {
+            if (getComputedStyle(d6).display != "none") {
+                d6.style.display = "none";
+            } else {
+                d6.style.display = "block";
+            }
+        })
+
+        //        function togg() {
+        //            if (getComputedStyle(d2).display != "none") {
+        //                d2.style.display = "none";
+        //            } else {
+        //                d2.style.display = "block";
+        //            }
+        //        };
+
+    </script>
+    <!--FIN AFFICHER DES DIVS AU CLIC-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

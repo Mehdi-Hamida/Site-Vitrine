@@ -399,9 +399,10 @@ h4
 
 /**************************POUR ALLER PLUS LOIN*****************************/
 
+
 #pour_aller_plus_loin
 {
-    background-image: url(img/last_background3.PNG);
+    background-image: url(img/last_background5.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -483,7 +484,7 @@ h4
     
     #scrolltop4 img
     {
-        margin-top: 89.5vh;
+        margin-top: 32.5vh;
     }
 
 /**********ACCUEIL**********/
@@ -669,14 +670,146 @@ h4
     
     #pour_aller_plus_loin
     {
-/*
-        background-image: url(img/699.png);
+        background-image: url(img/last_background6.PNG);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-*/
     }
     
+    #fusee
+    {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15vh;
+        text-align: center;
+        font-size: 3vh;
+    }
+
+    #contact
+    {
+        width: 35vw;
+        height: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5vh;
+        background-color: black;
+        color: darkgoldenrod;
+        font-family: 'Argesta Headline';
+        text-align: center;
+        font-size: 3vh;
+        font-weight: 1000;
+        border: solid 0.01rem darkgoldenrod;
+    }
+
+    #telephone
+    {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40vw;
+/*        margin-left: -32vw;*/
+        font-family: 'Argesta Headline';
+        font-weight: 500;
+        font-size: 2.7vh;
+/*        font-weight: 200;*/
+        margin-top: 5vh;
+    }
+    
+    #mail
+    {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: auto;
+/*        margin-left: 2vw;*/
+        margin-top: 11vh;
+        font-family: 'Argesta Headline';
+        color: darkgoldenrod;
+        font-size: 2.7vh;
+        font-weight: 100;
+        text-decoration: underline;
+    }
+    
+    #telephone, #mail, #linkedin, #cv, #github, #equipage
+    {
+        display: none;
+    }
+
+    /*
+    #contact:active #telephone
+    {
+        display: block;
+    }
+    */
+
+    #doutes
+    {
+        width: 47vw;
+        height: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 18vh;
+        background-color: black;
+        color: #595959;
+        text-align: center;
+        font-size: 3vh;
+        font-weight: 600;
+        border: solid 0.01rem #4d4d4d;
+    }
+    
+    #linkedin
+    {
+        width: 9vw;
+        height: 5vh;
+        margin-top: 2vh;
+        background-image: url(img/linkedin.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #cv
+    {
+        width: 9vw;
+        height: 5vh;
+        margin-left: 19vw;
+        margin-top: -5vh;
+        padding-top: 0.5vh;
+        background-color: #705400;
+        color: black;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 2.8vh;
+        font-weight: 800;
+        border-radius: 3px 3px;
+/*        border: solid 0.01rem #664d00;*/
+    }
+    
+    #github
+    {
+        width: 9vw;
+        height: 5vh;
+        margin-top: -5vh;
+        margin-left: 38vw;
+        background-image: url(img/github.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+    
+    #equipage
+    {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        margin-top: 3vh;
+        font-size: 2.5vh;
+        font-weight: bold;
+    }
 }
 
 /********************************TABLETTES***********************************/
