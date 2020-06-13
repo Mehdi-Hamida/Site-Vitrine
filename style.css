@@ -409,6 +409,18 @@ h4
     color: #a6a6a6;
 }
 
+.card img 
+{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.card img:hover
+{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
 #suivant4
 {
     margin-top: 1vh;
@@ -486,25 +498,25 @@ h4
 
     #scrolltop1 img
     {
-        margin-top: 87.3vh;
+        margin-top: 88.5vh;
         margin-left: 89.5vw;
     }
     
     #scrolltop2 img
     {
-        margin-top: 9vh;
+        margin-top: 10.5vh;
         margin-left: 89.5vw;
     }
 
     #scrolltop3 img
     {
-        margin-top: 5vh;
+        margin-top: -3vh;
         margin-left: 89.5vw;
     }
     
     #scrolltop4 img
     {
-        margin-top: 34.5vh;
+        margin-top: 36vh;
         margin-left: 89.5vw;
     }
 
@@ -638,14 +650,14 @@ h4
     
     #suivant2
     {
-        margin-top: 87.5vh;
+        margin-top: 89.5vh;
     }
     
     /**********COMPETENCES**********/
     
     #suivant3
     {
-        margin-top: 10.5vh;
+        margin-top: 12.5vh;
     }
     
     .carousel-item
@@ -704,6 +716,8 @@ h4
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
+        margin-top: 9vh;
+        height: 80vh;
     }
 
     .card
@@ -725,14 +739,31 @@ h4
 
     .card-body h4
     {
-        font-family: 'Alegreya Sans';
-        font-size: 1rem;
-        color: #a6a6a6;
+        font-family: 'Argesta Headline';
+        font-size: 3vh;
+        color: darkgoldenrod;
+        width: 100vw;
+        margin-top: 2vh;
+    }
+    
+    .card-body p
+    {
+        font-size: 2.7vh;
+        width: 95vw;
+        margin-top: 8vh;
+    }
+    
+    .card-body h4, .card-body p
+    {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);  
     }
     
     #suivant4
     {
-        margin-top: 8.5vh;
+        margin-top: 1.5vh;
     }
 
     /**********POUR ALLER PLUS LOIN**********/
