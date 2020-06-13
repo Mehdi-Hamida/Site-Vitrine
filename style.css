@@ -725,7 +725,7 @@ h4
         flex: 0 0 auto;
         height: 60vh;
         width: 80vw;
-        border: solid 0.1rem darkgoldenrod;
+        border: solid 0.2rem darkgoldenrod;
         background-color: black;
         display: inline-block;
         margin-right: 10vw;
@@ -734,7 +734,8 @@ h4
 
     .card img
     {
-        height: auto;
+        height: 100%;
+        width: 100%;
     }
 
     .card-body h4
