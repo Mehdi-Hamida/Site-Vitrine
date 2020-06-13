@@ -360,10 +360,18 @@ h4
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 /*DIV QUI CONTIENT LES CARTES DE PRESENTATION*/
+/*
+.scrolling-wrapper 
+{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 10vh;
+}
+
 .card_group
 {
     display: flex;
@@ -374,15 +382,25 @@ h4
     margin-right: auto;
     height: 80vh;
     width: 75vw;
+    display: inline-block;
 }
 
 .card
 {
-    height: 30vh;
-    width: 30vw;
-    border: solid 0.05rem darkgoldenrod;
+    height: 60vh;
+    width: 80vw;
+    border: solid 0.1rem darkgoldenrod;
     background-color: black;
+    display: inline-block;
+    margin-right: 5vw;
+    margin-left: 5vw;
 }
+
+.card img
+{
+    height: auto;
+}
+*/
 
 .card-body h4
 {
@@ -453,8 +471,7 @@ h4
         bottom: 10px;
         right: 10px;
     */
-        margin-left: 91.5vw;
-        margin-top: 90vh;
+        margin-left: 90.5vw;
     /*
         background-image: url(img/scrolltop.png);
         background-size: cover;
@@ -462,31 +479,43 @@ h4
         background-position: center;
     */
         cursor: pointer;
-        height: 1.7rem;
-        width: 2rem;
+        height: 2.3rem;
+        width: 2.6rem;
         opacity: 0.5;
     }
 
     #scrolltop1 img
     {
-        margin-top: 89.5vh;
+        margin-top: 87.3vh;
+        margin-left: 89.5vw;
     }
     
     #scrolltop2 img
     {
-        margin-top: 11.5vh;
+        margin-top: 9vh;
+        margin-left: 89.5vw;
     }
 
     #scrolltop3 img
     {
-        margin-top: 2.5vh;
+        margin-top: 5vh;
+        margin-left: 89.5vw;
     }
     
     #scrolltop4 img
     {
-        margin-top: 36.5vh;
+        margin-top: 34.5vh;
+        margin-left: 89.5vw;
     }
 
+    #scrolltop3
+    {
+        position: absolute;
+        z-index: 30;
+        margin-top: 2.5vh;
+        width: 2.6rem;
+    }
+    
 /**********ACCUEIL**********/
     .navbar 
     {
@@ -641,6 +670,7 @@ h4
     }
     /**********PROJETS**********/
     
+/*
     .card_group
     {
         display: flex;
@@ -652,7 +682,7 @@ h4
         height: 80vh;
         width: 95vw;
     }
-    
+
     .card
     {
         height: 35vh;
@@ -660,12 +690,51 @@ h4
         border: solid 0.05rem darkgoldenrod;
         background-color: black;
     }   
+*/
+    
+    .scrolling-wrapper 
+    {
+/*
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-top: 10vh;
+        width: 100vw;
+*/
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .card
+    {
+        flex: 0 0 auto;
+        height: 60vh;
+        width: 80vw;
+        border: solid 0.1rem darkgoldenrod;
+        background-color: black;
+        display: inline-block;
+        margin-right: 10vw;
+        margin-left: 10vw;
+    }
+
+    .card img
+    {
+        height: auto;
+    }
+
+    .card-body h4
+    {
+        font-family: 'Alegreya Sans';
+        font-size: 1rem;
+        color: #a6a6a6;
+    }
     
     #suivant4
     {
-        margin-top: 1.5vh;
+        margin-top: 8.5vh;
     }
-    
+
     /**********POUR ALLER PLUS LOIN**********/
     
     #pour_aller_plus_loin
