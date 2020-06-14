@@ -510,7 +510,6 @@ h4
 
     #scrolltop3 img
     {
-        margin-top: -3vh;
         margin-left: 89.5vw;
     }
     
@@ -716,8 +715,10 @@ h4
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
+        overflow-y: hidden;
         margin-top: 9vh;
-        height: 80vh;
+        height: 77vh;
+        scroll-snap-type: x mandatory;
     }
 
     .card
@@ -730,6 +731,7 @@ h4
         display: inline-block;
         margin-right: 10vw;
         margin-left: 10vw;
+        scroll-snap-align: center;
     }
 
     .card img
@@ -762,9 +764,27 @@ h4
         transform: translate(-50%, -50%);  
     }
     
+    ::-webkit-scrollbar-track 
+    {
+        display: none;
+    }
+
+    ::-webkit-scrollbar 
+    {
+        height: 2.5vh;
+    }
+
+    ::-webkit-scrollbar-thumb 
+    {
+        background-image: url(img/scrollside.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
     #suivant4
     {
-        margin-top: 1.5vh;
+        margin-top: 4.5vh;
     }
 
     /**********POUR ALLER PLUS LOIN**********/
