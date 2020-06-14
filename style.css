@@ -703,6 +703,7 @@ h4
     }   
 */
     
+    /*SCROLL-SNAP PERMET DE DEFINIR DES PONTS D'ACCROCHE SUR LES CARTES*/
     .scrolling-wrapper 
     {
 /*
@@ -719,8 +720,10 @@ h4
         margin-top: 9vh;
         height: 77vh;
         scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
     }
 
+    /*SCROLL-SNAP-ALIGN PERMET DE CENTRER LA CARTE AU POINT D'ACCROCHE*/
     .card
     {
         flex: 0 0 auto;
