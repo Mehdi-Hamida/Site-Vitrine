@@ -830,7 +830,7 @@ h4
 
     #contact
     {
-        width: 40vw;
+        width: 65vw;
         height: 5vh;
         margin-left: auto;
         margin-right: auto;
@@ -839,9 +839,10 @@ h4
         color: darkgoldenrod;
         font-family: 'Argesta Headline';
         text-align: center;
-        font-size: 3vh;
+        font-size: 2.7vh;
         font-weight: 1000;
         border: solid 0.01rem darkgoldenrod;
+        padding-top: 0.35vh
     }
 
     #telephone
@@ -849,11 +850,11 @@ h4
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 40vw;
+/*        width: 70vw;*/
 /*        margin-left: -32vw;*/
         font-family: 'Argesta Headline';
         font-weight: 500;
-        font-size: 2.7vh;
+        font-size: 2.5vh;
 /*        font-weight: 200;*/
         margin-top: 5vh;
     }
@@ -864,12 +865,13 @@ h4
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        width: auto;
+/*        width: auto;*/
 /*        margin-left: 2vw;*/
         margin-top: 11vh;
+        margin-left: 2vh;
         font-family: 'Argesta Headline';
         color: darkgoldenrod;
-        font-size: 2.7vh;
+        font-size: 2.5vh;
         font-weight: 100;
         text-decoration: underline;
     }
@@ -879,6 +881,23 @@ h4
         display: none;
     }
 
+    #telephone svg
+    {
+        position: relative;
+        width: 3vh;
+        margin-top: -1.5vh;
+        margin-right: 1vh;
+    }
+    
+        #mail svg
+    {
+/*        position: relative;*/
+/*        width: 10vh;*/
+        height: 3vh;
+        margin-top: 0.5vh;
+        margin-left: -20vh;
+    }
+    
     /*
     #contact:active #telephone
     {
@@ -897,7 +916,7 @@ h4
         color: #595959;
         text-align: center;
         font-size: 3vh;
-        font-weight: 600;
+        font-weight: bold;
         border: solid 0.01rem #4d4d4d;
     }
     
@@ -905,7 +924,7 @@ h4
     {
         width: 9vw;
         height: 5vh;
-        margin-top: 4vh;
+        margin-top: 3vh;
         background-image: url(img/linkedin.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -914,9 +933,9 @@ h4
     
     #cv
     {
-        width: 9vw;
+        width: 5vh;
         height: 5vh;
-        margin-left: 19vw;
+        margin-left: 40%;
         margin-top: -5vh;
         padding-top: 0.5vh;
         background-color: #705400;
@@ -931,14 +950,14 @@ h4
     
     #github
     {
-        width: 9vw;
+        width: 11vw;
         height: 5vh;
         margin-top: -5vh;
-        margin-left: 38vw;
+        margin-left: 39vw;
         background-image: url(img/github.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         
     }
     
@@ -947,9 +966,9 @@ h4
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100vw;
+        width: 90vw;
         margin-top: 5vh;
-        font-size: 2.5vh;
+        font-size: 2.8vh;
         font-weight: bold;
     }
 }
