@@ -766,17 +766,35 @@ h4
         left: 50%;
         transform: translate(-50%, -50%);  
     }
+        
+    scrollbar-track 
+    {
+        display: none;
+    }
     
     ::-webkit-scrollbar-track 
     {
         display: none;
     }
 
+        scrollbar 
+    {
+        height: 2.5vh;
+    }
+    
     ::-webkit-scrollbar 
     {
         height: 2.5vh;
     }
 
+    scrollbar-thumb 
+    {
+        background-image: url(img/scrollside.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
     ::-webkit-scrollbar-thumb 
     {
         background-image: url(img/scrollside.png);
