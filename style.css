@@ -807,6 +807,17 @@ h4
     {
         margin-top: 4.5vh;
     }
+    
+    #next
+    {
+        position: absolute;
+        margin-left: 91vw;
+        margin-top: 35vh;
+        height: 1rem;
+        width: 2rem;
+        background-color: red;
+        color: aqua;
+    }
 
     /**********POUR ALLER PLUS LOIN**********/
     

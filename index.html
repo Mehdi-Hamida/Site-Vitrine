@@ -125,7 +125,8 @@
     <section id="competences">
         <h2>Compétences</h2>
         <!--CAROUSEL-->
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <!--DATA-INTERVAL=FALSE EMPECHE LE DEFILEMENT AUTOMATIQUE DU CAROUSEL-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -206,6 +207,7 @@
         <h2>Projets</h2>
         <!--CARTES DE PRESENTATION-->
         <div class="scrolling-wrapper">
+            <a href="#card2"><div id="next">next</div></a>
             <div class="card">
                 <a href="https://mehdi-hamida.github.io/Projet-4-Optimisez-un-site-web-existant/">
                     <img src="img/illustr_projet3.PNG" class="card-img-top" alt="...">
@@ -215,7 +217,7 @@
                     <p class="card-text">Optimisation du SEO d'un site web existant</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="card2">
                 <a href="https://mehdi-hamida.github.io/Projet-3-Dynamisez-une-page-web-avec-des-animations-CSS/">
                     <img src="img/illustr_projet2.PNG" class="card-img-top" alt="...">
                 </a>
@@ -359,12 +361,9 @@
         //                d2.style.display = "block";
         //            }
         //        };
-
     </script>
     <!--FIN AFFICHER DES DIVS AU CLIC-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-
-</html>
+</body></html>
