@@ -249,7 +249,7 @@ blockquote
     margin-top: 30rem;
     font-size: 200%;
     text-align: center;
-    /*quotes: "“""”";*/
+    quotes: "“""”";
     line-height: 1.5em;
 }
 
