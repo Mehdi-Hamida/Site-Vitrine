@@ -438,7 +438,23 @@ h4
     background-position: top;
 }
 
-/************************FIN POUR ALLER PLUS LOIN***************************/
+#telephone
+{
+    color: darkgoldenrod;
+    text-decoration: underline
+}
+
+a #linkedin
+{
+    color: darkgoldenrod
+}
+
+a #github
+{
+    color: darkgoldenrod
+}
+
+/******************FIN POUR ALLER PLUS LOIN***************************/
 
 
 
@@ -594,7 +610,7 @@ h4
     svg
     {
         position: absolute;
-        margin-top: 40vh;
+        margin-top: 33vh;
     }
     
 /*
