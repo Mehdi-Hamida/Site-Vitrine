@@ -732,6 +732,14 @@ a #github
     }   
 */
     
+    #projets
+    {
+        background-image: url(img/image030.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
     /*SCROLL-SNAP PERMET DE DEFINIR DES PONTS D'ACCROCHE SUR LES CARTES*/
     .scrolling-wrapper 
     {
