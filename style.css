@@ -266,7 +266,7 @@ h1, h3, blockquote
 .quote2 
 {
     position: absolute;
-    font-family: 'arial', sans-serif;
+    font-family: sans-serif, 'arial';
     color: darkgoldenrod;
     font-size: 3rem;
 }
