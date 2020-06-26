@@ -266,12 +266,13 @@ h1, h3, blockquote
 .quote2 
 {
     position: absolute;
-    font-family: 'helvetica', 'georgia', 'arial';
+/*    font-family: 'helvetica', 'georgia', 'arial';*/
+    font-family: 'Oswald', sans-serif;
     color: darkgoldenrod;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-.quote2 
+.quote2
 {
     margin-left: 25rem;
 }
@@ -610,7 +611,7 @@ a #github
     svg
     {
         position: absolute;
-        margin-top: 28vh;
+        margin-top: 32vh;
     }
     
 /*
