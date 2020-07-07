@@ -67,7 +67,7 @@ particlesJS('particles-js',
         "distance": 200,
         "color": /*"#806000"*/"#806000",
         "opacity": 0.5,
-        "width": 0.7
+        "width": 1
       },
       "move": {
         "enable": true,
