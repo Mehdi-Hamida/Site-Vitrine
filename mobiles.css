@@ -180,13 +180,40 @@ button
     margin-top: -4vh;
 }
 
+
+/*TEST TEST TEST TEST TEST TEST TEST*/
+
+#background
+{
+  position: fixed;
+  z-index: -3;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/news2/423.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*TEST TEST TEST TEST TEST TEST TEST*/
+
+
 /**********A PROPOS***************/
+
+#a_propos
+{
+/*
+    background-image: url(img/news2/422.png);
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+*/
+}
 
 h1 
 {
-    font-size:
-        /*2.6rem*/
-        9vw;
+    font-size:/*2.6rem*/9vw;
     margin-top: 25vh;
 }
 
@@ -224,6 +251,11 @@ blockquote
 }
 
 /**********COMPETENCES**********/
+
+#competences
+{
+/*    background-image: url(img/news2/422.png);*/
+}
 
 #suivant3 
 {
@@ -282,10 +314,12 @@ h4
 
 #projets 
 {
-    background-image: url(img/image030.png);
+/*
+    background-image: url(img/news2/422.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+*/
 }
 
 /*SCROLL-SNAP PERMET DE DEFINIR DES PONTS D'ACCROCHE SUR LES CARTES*/
@@ -398,10 +432,13 @@ scrollbar-thumb
 
 #pour_aller_plus_loin 
 {
-    background-image: url(img/last_background6.PNG);
+/*
+    background-image: url(img/image10.png);
+    background-image: url(img/news2/422.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+*/
 }
 
 #fusee 
