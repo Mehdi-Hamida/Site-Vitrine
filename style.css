@@ -107,6 +107,7 @@ h1, h2, h3, #explorer
     font-size: 1.5rem;
     height:3vh;
     background-color: transparent!important;
+    box-sizing: content-box;
 }
 
 .navbar-toggler, .navbar-toggler-icon
