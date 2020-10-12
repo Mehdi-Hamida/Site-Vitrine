@@ -500,6 +500,7 @@ h4
 }
 
 
+/*
 scrollbar-track 
 {
     display: none;
@@ -509,10 +510,11 @@ scrollbar-track
 {
     display: none;
 }
+*/
 
 scrollbar 
 {
-    height: 0vh;
+    height: 3vh;
 }
 
 ::-webkit-scrollbar 
