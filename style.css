@@ -438,8 +438,8 @@ h4
 */
     
     flex: 0 0 auto;
-    height: 60vh;
-    width: 35vw;
+    height: 50vh;
+    width: 20vw;
     border: solid 0.15rem darkgoldenrod;
     background-color: black;
     display: inline-block;
