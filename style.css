@@ -22,7 +22,7 @@ html
 * 
 {
    font-family: 'Alegreya sans', sans-serif;
-    box-sizing: content-box;
+    box-sizing: none;
 }
 
 @font-face 
@@ -204,7 +204,7 @@ svg
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    margin-top: -4.5rem;
+    margin-top: -7vh;
     /*margin-bottom: 0.19rem;*/
     margin-left: auto;
     text-align: center;
@@ -451,8 +451,8 @@ h4
     border: solid 0.15rem darkgoldenrod;
     background-color: black;
     display: inline-block;
-    margin-right: 1.8vw;
-    margin-left: 1.8vw;
+    margin-right: 1.9vw;
+    margin-left: 1.9vw;
 /*    scroll-snap-align: center;*/
 }
 
@@ -520,6 +520,7 @@ scrollbar-track
 }
 */
 
+/*
 scrollbar 
 {
     height: 3vh;
@@ -529,6 +530,7 @@ scrollbar
 {
     height: 3vh;
 }
+*/
 
 scrollbar-thumb 
 {
