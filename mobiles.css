@@ -220,7 +220,7 @@ blockquote
 {
     margin-top: 50vh;
     font-size: 5.5vw;
-    width: 70vw;
+    width: 75vw;
     text-align: center;
 }
 
@@ -228,14 +228,14 @@ blockquote
 
 .quote1 
 {
-    margin-left: -7vw;
+    margin-left: -5vw;
     margin-top: -1vh;
 }
 
 .quote2 
 {
-    margin-top: 1vh;
-    margin-left: 72vw;
+    margin-top: -1vh;
+    margin-left: 74vw;
 }
 
 #suivant2 
