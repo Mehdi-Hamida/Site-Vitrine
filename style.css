@@ -443,8 +443,8 @@ h4
     border: solid 0.15rem darkgoldenrod;
     background-color: black;
     display: inline-block;
-    margin-right: 4vw;
-    margin-left: 4vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
     scroll-snap-align: center;
 }
 
@@ -540,7 +540,7 @@ scrollbar-thumb
 
 #suivant4
 {
-    margin-top: 5.2vh;
+    margin-top: 2vh;
 }
 /******************************FIN PROJETS**********************************/
 
