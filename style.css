@@ -67,7 +67,7 @@ h2
     margin-top: -2vh;
     background-color: black;
     border: solid darkgoldenrod 1px;
-    width: 30vw;
+    width: 25vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -405,7 +405,7 @@ h4
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    margin-top: 15vh;
+    margin-top: 10vh;
     height: 75vh;
     width: 100vw;
     scroll-snap-type: x mandatory;
@@ -547,6 +547,7 @@ scrollbar-thumb
 /**************************POUR ALLER PLUS LOIN*****************************/
 
 
+/*
 #pour_aller_plus_loin
 {
     background-image: url(img/last_background5.PNG);
@@ -554,6 +555,7 @@ scrollbar-thumb
     background-repeat: no-repeat;
     background-position: top;
 }
+*/
 
 #telephone
 {
