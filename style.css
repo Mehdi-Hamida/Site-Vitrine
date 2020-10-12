@@ -315,7 +315,7 @@ h1, h3, blockquote
 
 #suivant2
 {
-    margin-top: 84vh;
+    margin-top: 87vh;
 }
 
 /******************************FIN A PROPOS*********************************/
@@ -370,7 +370,7 @@ h4
 
 #suivant3
 {
-    margin-top: 7vh;
+    margin-top: 10vh;
 }
 
 .carousel-item
@@ -451,8 +451,8 @@ h4
     border: solid 0.15rem darkgoldenrod;
     background-color: black;
     display: inline-block;
-    margin-right: 1.9vw;
-    margin-left: 1.9vw;
+    margin-right: 1.8vw;
+    margin-left: 1.8vw;
 /*    scroll-snap-align: center;*/
 }
 
@@ -548,7 +548,7 @@ scrollbar-thumb
 
 #suivant4
 {
-    margin-top: 2vh;
+    margin-top: 3vh;
 }
 /******************************FIN PROJETS**********************************/
 
