@@ -58,6 +58,19 @@ footer
     padding-top: 8vh;
 }
 
+#background
+{
+    position: fixed;
+    z-index: -3;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 6vh;
+    background-image: url(img/423.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
 blockquote, p
 {
     color: #a6a6a6;
@@ -103,7 +116,6 @@ h1, h2, h3, #explorer
 
 .navbar 
 {
-    /*border-bottom: solid 0.01rem #4d3d00;*/
     font-size: 1.5rem;
     height:3vh;
     background-color: transparent!important;
@@ -116,14 +128,6 @@ h1, h2, h3, #explorer
     height: 2.3rem;
     border-color: transparent!important;
 }
-
-/*
-#nom 
-{
-    font-size: 1.7rem;
-    margin-left: -0.9rem;
-}
-*/
 
 /*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
 
@@ -140,14 +144,11 @@ h1, h2, h3, #explorer
     margin-right: auto;
 }
 
-/********************************FIN NAVBAR**********************************/
-
 /*********************************ACCUEIL************************************/
 
 /*BACKGROUND ANIME*/
 #particles-js
 {
-    /*position: absolute;*/
     z-index: -2;
     width: 100vw;
     height: 100vh;
@@ -178,12 +179,8 @@ svg
 /*DEFINIR LA SURFACE D'ACTIVATION DU BOUTON "#SUIVANT"*/
 .bouton
 {
-    /*margin-left: 21vh;
-    margin-right: 20vh;*/
     left: 50%;
     transform: translate(-50%, -50%);
-    /*width: 5vh;*/
-    /*height: 5vh;*/
     position: absolute;
 }
 
@@ -193,8 +190,6 @@ svg
     position: absolute;
     height: 6vh;
     width: 6vh;
-    /*margin-left: auto;
-    margin-right: auto;*/
     background-image: url(img/triangle.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -207,44 +202,17 @@ svg
     transform: translate(-50%, -50%);
     position: absolute;
     margin-top: -7vh;
-    /*margin-bottom: 0.19rem;*/
     margin-left: auto;
     text-align: center;
     font-size: 0.7rem;
     font-weight: 600;
     background-color: transparent;
-    /*bottom: 50vh;*/
 }
-
-/******************************FIN ACCUEIL**********************************/
-
-
-/*TEST TEST TEST TEST TEST TEST TEST*/
-
-#background
-{
-    position: fixed;
-    z-index: -3;
-    width: 100vw;
-    height: 100vh;
-    margin-top: 6vh;
-    background-image: url(img/news2/423.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-/*TEST TEST TEST TEST TEST TEST TEST*/
-
-
 
 /********************************A PROPOS***********************************/
     
 #a_propos
 {
-/*    background-image: url(img/a_propos_background.png);*/
-/*    background-image: url(img/news2/422.png);*/
-    /*background-size: 100vw 100vh;*/
     background-color: transparent;
     background-size: cover;
     background-repeat: no-repeat;
@@ -297,7 +265,6 @@ h1, h3, blockquote
 .quote2 
 {
     position: absolute;
-/*    font-family: 'helvetica', 'georgia', 'arial';*/
     font-family: 'Oswald', sans-serif;
     color: darkgoldenrod;
     font-size: 2.5rem;
@@ -320,14 +287,10 @@ h1, h3, blockquote
     margin-top: 87vh;
 }
 
-/******************************FIN A PROPOS*********************************/
-
 /******************************COMPETENCES**********************************/
 
 #competences
 {
-/*    background-image: url(img/competences_background.png);*/
-/*    background-image: url(img/news2/422.png);*/
     background-color: transparent;
     background-size: 100vw 100vh;
     background-size: cover;
@@ -375,35 +338,13 @@ h4
     margin-top: 10vh;
 }
 
-.carousel-item
-{
-/*
-    background-image: url(img/css3logo.PNG);
-    background-size:auto;
-    background-repeat: no-repeat;
-    background-position: center;
-*/
-}
-
 .d-block
 {
     margin: auto;
     margin-top: 30vh;
 }
 
-/****************************FIN COMPETENCES********************************/
-
 /********************************PROJETS************************************/
-/*
-#projets
-{
-    background-image: url(img/projets_background.png);
-    background-size: 100vw 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
 
 /*DIV QUI CONTIENT LES CARTES DE PRESENTATION*/
 .scrolling-wrapper 
@@ -414,40 +355,10 @@ h4
     margin-top: 10vh;
     height: 75vh;
     width: 100vw;
-/*
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-*/
-}
-
-.card_group
-{
-/*
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 4vh;
-    margin-left: auto;
-    margin-right: auto;
-    height: 80vh;
-    width: 75vw;
-    display: inline-block;
-*/
 }
 
 .card
 {
-/*
-    height: 100%;
-    width: 40vw;
-    border: solid 0.1rem darkgoldenrod;
-    background-color: black;
-    display: inline-block;
-    margin-right: 5vw;
-    margin-left: 5vw;
-*/
-    
-/*    flex: 0 0 auto;*/
     height: 50vh;
     width: 21vw;
     border: solid 0.15rem darkgoldenrod;
@@ -455,22 +366,12 @@ h4
     display: inline-block;
     margin-right: 1.9vw;
     margin-left: 1.9vw;
-/*    scroll-snap-align: center;*/
 }
 
 .card img
 {
     height: 100%;
 }
-
-/*
-.card-body h4
-{
-    font-family: 'Alegreya Sans';
-    font-size: 1rem;
-    color: #a6a6a6;
-}
-*/
 
 .card img 
 {
@@ -509,31 +410,6 @@ h4
     transform: translate(-50%, -50%);
 }
 
-
-/*
-scrollbar-track 
-{
-    display: none;
-}
-
-::-webkit-scrollbar-track 
-{
-    display: none;
-}
-*/
-
-/*
-scrollbar 
-{
-    height: 3vh;
-}
-
-::-webkit-scrollbar 
-{
-    height: 3vh;
-}
-*/
-
 scrollbar-thumb 
 {
     background-image: url(img/scrollside.png);
@@ -554,20 +430,8 @@ scrollbar-thumb
 {
     margin-top: 3vh;
 }
-/******************************FIN PROJETS**********************************/
 
 /**************************POUR ALLER PLUS LOIN*****************************/
-
-
-/*
-#pour_aller_plus_loin
-{
-    background-image: url(img/last_background5.PNG);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-*/
 
 #telephone
 {
@@ -601,7 +465,6 @@ a #github
     height: 5vh;
     margin-left: auto;
     margin-right: auto;
-    /*        margin-top: 1vh;*/
     background-color: black;
     color: darkgoldenrod;
     font-family: 'Argesta Headline';
@@ -617,12 +480,9 @@ a #github
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*        width: 70vw;*/
-    /*        margin-left: -32vw;*/
     font-family: 'Argesta Headline';
     font-weight: 500;
     font-size: 2.5vh;
-    /*        font-weight: 200;*/
     margin-top: 5vh;
 }
 
@@ -632,8 +492,6 @@ a #github
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /*        width: auto;*/
-    /*        margin-left: 2vw;*/
     margin-top: 11vh;
     margin-left: 2vh;
     font-family: 'Argesta Headline';
@@ -663,19 +521,10 @@ a #github
 
 #mail svg 
 {
-    /*        position: relative;*/
-    /*        width: 10vh;*/
     height: 3vh;
     margin-top: 0.5vh;
     margin-left: -20vh;
 }
-
-/*
-    #contact:active #telephone
-    {
-        display: block;
-    }
-    */
 
 #doutes 
 {
@@ -718,7 +567,6 @@ a #github
     font-size: 2.8vh;
     font-weight: 800;
     border-radius: 3px 3px;
-    /*        border: solid 0.01rem #664d00;*/
 }
 
 #github 
@@ -745,23 +593,6 @@ a #github
     color: #4d4d4d;
     font-size: 2vw;
 }
-
-
-/******************FIN POUR ALLER PLUS LOIN***************************/
-
-
-
-
-
-/******************************MODE PAYSAGE**********************************/
-@media
-    
-    
-    
-    
-    
-    
-    
     
 /*//////////////////////////////ANIMATIONS/////////////////////////////////*/
     

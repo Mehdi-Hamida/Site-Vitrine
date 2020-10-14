@@ -1,6 +1,19 @@
 /********************************MOBILES***********************************/
 
 /*****GENERAL*****/
+
+#background
+{
+  position: fixed;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/423.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 h2 
 {
     margin-top: -6.3vh;
@@ -21,13 +34,6 @@ h2
     margin-top: -0.5%;
 }
 
-/*
-    #navbarNav
-    {
-        backdrop-filter: blur(10px);
-    }
-*/
-
 /*BAISSER ACCUEIL*/
 #page-scroll 
 {
@@ -42,17 +48,7 @@ h2
 {
     display: block;
     position: static;
-    /*
-        bottom: 10px;
-        right: 10px;
-    */
     margin-left: 90.5vw;
-    /*
-        background-image: url(img/scrolltop.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    */
     cursor: pointer;
     height: 2.3rem;
     width: 2.6rem;
@@ -93,11 +89,8 @@ h2
 /**********ACCUEIL**********/
 .navbar 
 {
-    /*background-color: #0d0d0d;
-        border-bottom: solid 0.01rem #4d3d00;*/
     font-size: 1.5rem;
     height: 7.2vh;
-    /*3rem*/
 }
 
 .nav-link 
@@ -113,9 +106,7 @@ h2
 
 .navbar-dark .navbar-nav .nav-link.active 
 {
-    color:
-        /*#a6a6a6*/
-        darkgoldenrod;
+    color: darkgoldenrod;
 }
 
 nav img 
@@ -152,18 +143,6 @@ svg
     margin-top: 32vh;
 }
 
-/*
-    #blurred
-    {
-        position: absolute;
-        z-index: 1;
-        margin-top: 39vh;
-        width: 100vw;
-        height: 4rem;
-        backdrop-filter: blur(0.8px);
-    }
-*/
-
 button 
 {
     margin-top: -0.6rem;
@@ -179,29 +158,11 @@ button
     margin-top: -4vh;
 }
 
-
-/*TEST TEST TEST TEST TEST TEST TEST*/
-
-#background
-{
-  position: fixed;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(img/news2/423.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/*TEST TEST TEST TEST TEST TEST TEST*/
-
-
 /**********A PROPOS***************/
 
 h1 
 {
-    font-size:/*2.6rem*/9vw;
+    font-size: 9vw;
     margin-top: 25vh;
 }
 
@@ -249,16 +210,6 @@ blockquote
     margin-top: 12.5vh;
 }
 
-.carousel-item 
-{
-    /*
-        background-image: url(img/css3logo.PNG);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-*/
-}
-
 .carousel-caption 
 {
     margin-bottom: -25vh;
@@ -277,42 +228,9 @@ h4
 
 /**********PROJETS**********/
 
-/*
-    .card_group
-    {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 7vh;
-        margin-left: auto;
-        margin-right: auto;
-        height: 80vh;
-        width: 95vw;
-    }
-
-    .card
-    {
-        height: 35vh;
-        width: 40vw;
-        border: solid 0.05rem darkgoldenrod;
-        background-color: black;
-    }   
-*/
-
-#projets 
-{
-}
-
 /*SCROLL-SNAP PERMET DE DEFINIR DES PONTS D'ACCROCHE SUR LES CARTES*/
 .scrolling-wrapper 
 {
-    /*
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        margin-top: 10vh;
-        width: 100vw;
-*/
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -431,7 +349,6 @@ scrollbar-thumb
     height: 5vh;
     margin-left: auto;
     margin-right: auto;
-    /*        margin-top: 1vh;*/
     background-color: black;
     color: darkgoldenrod;
     font-family: 'Argesta Headline';
@@ -447,12 +364,9 @@ scrollbar-thumb
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*        width: 70vw;*/
-    /*        margin-left: -32vw;*/
     font-family: 'Argesta Headline';
     font-weight: 500;
     font-size: 2.5vh;
-    /*        font-weight: 200;*/
     margin-top: 5vh;
 }
 
@@ -462,8 +376,6 @@ scrollbar-thumb
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    /*        width: auto;*/
-    /*        margin-left: 2vw;*/
     margin-top: 11vh;
     margin-left: 2vh;
     font-family: 'Argesta Headline';
@@ -493,19 +405,10 @@ scrollbar-thumb
 
 #mail svg 
 {
-    /*        position: relative;*/
-    /*        width: 10vh;*/
     height: 3vh;
     margin-top: 0.5vh;
     margin-left: -20vh;
 }
-
-/*
-    #contact:active #telephone
-    {
-        display: block;
-    }
-    */
 
 #doutes 
 {
@@ -534,28 +437,6 @@ scrollbar-thumb
     background-size: cover;
 }
 
-/*
-#lien_linkedin
-{
-    width: auto;
-    height: auto;
-}
-
-#lien_github
-{
-    margin-left: 35vw;
-    width: 11vw;
-}
-*/
-
-/*
-#linkedin p
-{
-    padding-top: 5vh;
-    padding-left: -20vw;
-}
-*/
-
 #cv 
 {
     width: 5vh;
@@ -570,7 +451,6 @@ scrollbar-thumb
     font-size: 2.8vh;
     font-weight: 800;
     border-radius: 3px 3px;
-    /*        border: solid 0.01rem #664d00;*/
 }
 
 #github 
