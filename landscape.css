@@ -1,0 +1,180 @@
+/**********GENERAL**********/
+
+#suivant1, #suivant2, #suivant3, #suivant4
+{
+    width: 20vh;
+}
+
+#scrolltop1 img, #scrolltop2 img, #scrolltop3 img, #scrolltop4 img
+{
+    width: 8vh;
+    height: 7vh;
+}
+
+/**********NAVBAR**********/
+
+/*BAISSER ACCUEIL*/
+#page-scroll 
+{
+    margin-top: 5vh;
+    font-size: 1.5rem;
+}
+
+a.nav-link
+{
+    font-size: 1.5rem;
+    margin-top: -15vh;
+}
+
+/**********ACCUEIL**********/
+
+svg
+{
+    height: 25rem;
+    margin-top: 28vh;
+}
+
+#suivant1
+{
+    width: 20vh;
+    height: 6vh;
+}
+
+#explorer
+{
+    margin-top: -10vh;
+}
+
+/**********A PROPOS**********/
+
+h1 
+{
+    font-size:/*2.6rem*/9vh;
+    margin-top: 25vh;
+}
+
+.lyon 
+{
+    font-size: 7vh;
+    margin-top: 37vh;
+}
+
+blockquote 
+{
+    margin-top: 60vh;
+    font-size: 5.5vh;
+    width: 75vh;
+    text-align: center;
+}
+
+/*AJOUT DE GUILLEMETS*/
+
+.quote1 
+{
+    margin-left: -3vh;
+    margin-top: -3vh;
+}
+
+.quote2 
+{
+    margin-top: -1vh;
+    margin-left: 72vh;
+}
+
+#suivant2 
+{
+    margin-top: 86vh;
+}
+
+#scrolltop1 img
+{
+    margin-top: 84vh;
+}
+
+/**********COMPETENCES**********/
+
+.carousel-item img
+{
+    width: 35vh;
+}
+
+#suivant3
+{
+    margin-top: 8vh;
+}
+
+#scrolltop2 img
+{
+    margin-top: 5vh;
+}
+
+/**********PROJETS**********/
+
+.scrolling-wrapper
+{
+    margin-top: 6vh;
+}
+
+.card
+{
+    width: 45vh;
+    margin-left: 80vh;
+}
+
+#scrolltop3 img
+{
+    margin-top: -1.5vh;
+}
+
+.card-body h4 
+{
+    font-size: 4vh;
+    margin-top: 0vh;
+}
+
+.card-body p 
+{
+    font-size: 4vh;
+    margin-top: 6vh;
+}
+
+/**********POUR ALLER PLUS LOIN**********/
+
+#fusee 
+{
+    font-size: 3.5vh;
+    margin-top: 15vh;
+}
+
+#doutes
+{
+    margin-top: 16vh;
+}
+
+#equipage 
+{
+    font-size: 3.5vh;
+    margin-top: -30vh;
+}
+
+#linkedin
+{
+    margin-top: 10vh;
+    margin-left: 48.8%;
+    width: 1.3rem;
+}
+
+#cv
+{
+    margin-left: 48.8%;
+}
+
+#github
+{
+    margin-left: 44.8%;
+}
+
+#scrolltop4 img
+{
+    margin-top: 29vh;
+}
