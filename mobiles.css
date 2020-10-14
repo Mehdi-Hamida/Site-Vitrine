@@ -127,7 +127,7 @@ nav img
 }
 
 /*LOGO MH DE LA NAVBAR*/
-.d-inline-block 
+#logo 
 {
     margin-left: -30%;
 }
@@ -199,10 +199,6 @@ button
 
 
 /**********A PROPOS***************/
-
-#a_propos
-{
-}
 
 h1 
 {

@@ -126,10 +126,11 @@ h1, h2, h3, #explorer
 */
 
 /*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
-.navbar-nav a.nav-link .active 
+
+.active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
 {
     color: darkgoldenrod!important;
-    background-color: black;
+    font-weight: bold;
 }
 
 .d-inline-block
