@@ -1,6 +1,17 @@
 /********************************TABLETTES***********************************/
 
+h2
+{
+    margin-top: -2vh;
+}
+
 /**********NAVBAR**********/
+
+.navbar-collapse
+{
+    width: 20vw;
+    font-size: 50rem;
+}
 
 #logo
 {
@@ -47,9 +58,6 @@ button:hover
 #navbarNav 
 {
     background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
     width: 100%;
     margin-left: -5%;
@@ -67,6 +75,38 @@ a.nav-link
 {
     font-size: 2.5rem;
     margin-top: 5vh;
+}
+
+/*MEDIA QUERY POUR CORRIGER UN PROBLEME D'AFFICHAGE DE NAVBAR SUR IPAD PRO*/
+@media (min-width: 769px) and (min-height: 1366px)
+{
+    #navbarNav
+    {
+        background-color: black;
+        margin-left: -10vw;
+        z-index: -1;
+        height: 7vh;
+        padding-right: 8vw;
+        border-bottom: solid darkgoldenrod 2px;
+    }
+    
+    #page-scroll 
+    {
+        margin-top: 1.5vh;
+        margin-right: 2vw;
+    }
+
+    a.nav-link
+    {
+        font-size: 2rem;
+        margin-top: 1.5vh;
+        margin-right: 2vw;
+    }
+    
+    #logo
+    {
+        margin-top: 1vh;
+    }
 }
 
 /**********A PROPOS**********/
@@ -241,4 +281,33 @@ scrollbar-thumb
 #linkedin
 {
     margin-top: 10vh;
+}
+
+@media (min-width: 769px) and (min-height: 1366px)
+{
+    #equipage
+    {
+        margin-top: -28vh;
+    }
+    
+    #linkedin
+    {
+        height: 4.8vh;
+        width: 7.3vw;
+        margin-left: 47vw;
+    }
+    
+    #cv
+    {
+        height: 5vh;
+        width: 7.3vw;
+        margin-left: 47vw;
+    }
+    
+    #github
+    {
+        height: 5vh;
+        width: 7.5vw;
+        margin-left: 47vw;
+    }
 }
