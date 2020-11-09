@@ -95,7 +95,6 @@ h1, h2, h3, #explorer
     text-align: center;
 }
 
-
 #suivant2, #suivant3, #suivant4
 {
     height: 6vh;
@@ -129,6 +128,33 @@ h1, h2, h3, #explorer
     border-color: transparent!important;
 }
 
+#navbarNav
+{
+    background-color: black;
+    z-index: -1;
+    height: 7vh;
+    padding-right: 5vw;
+
+}
+    
+#page-scroll 
+{
+    margin-top: 3vh;
+    margin-right: 2vw;
+}
+
+a.nav-link
+{
+    font-size: 1.5rem;
+    margin-top: 3vh;
+    margin-right: 2vw;
+}
+
+#logo
+{
+    margin-top: 1rem;
+}
+
 /*LA COULEUR DE LA SECTION CONCERNEE PAR LE SCROLLSPY DANS LA NAVBAR DEVIENT DORE*/
 
 .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
@@ -143,7 +169,6 @@ h1, h2, h3, #explorer
     margin-left: auto;
     margin-right: auto;
 }
-
 /*********************************ACCUEIL************************************/
 
 /*BACKGROUND ANIME*/
